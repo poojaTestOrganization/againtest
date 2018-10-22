@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import pmiPar from './pmi-par'
+import rbvwCsvPar from './rbvw-csv-par'
 
 const router = new Router()
 
@@ -27,5 +28,7 @@ const router = new Router()
  * @apiParam {String[]} [fields] Fields to be returned.
  */
 router.use('/pmi-pars', pmiPar)
+
+router.use('/rbvw-csv-par', rbvwCsvPar)
 
 export default router
